@@ -1,5 +1,5 @@
 [submodule "gta5_fivem-maestra"]
-	path = 1_app/gta5_fivem-maestra
+	path = 1_app_fivem/gta5_fivem-maestra
 	url = https://github.com/Esquimen/gta5_fivem-maestra.git
 	branch = master
 	ignore = dirty
