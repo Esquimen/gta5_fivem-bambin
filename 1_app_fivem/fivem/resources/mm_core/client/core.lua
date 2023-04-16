@@ -1,8 +1,6 @@
 -- ----------------------------------------------------------------------------------- Génération de l'objet [copCore]
-	copCore = {}
-	copCore.objects = {}
-	copCore.classes = {}
+copCore = {}
 
-	function getServerObject()
-		return copCore
-	end
+function getClientObject()
+    return copCore
+end
