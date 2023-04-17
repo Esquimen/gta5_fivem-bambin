@@ -1,3 +1,10 @@
+--[[
+--@author: Mathieu MARI <contact@mathieumari.com>
+--@date:   16-04-2023 22:36:18
+--@lastModifiedBy:   Mathieu MARI <contact@mathieumari.com>
+--@lastModifiedTime: 2023-04-17 17:00:58
+--]]
+
 fx_version 'cerulean'
 game 'gta5'
 lua54 'yes'
@@ -9,7 +16,7 @@ version '1.0.0'
 -- ------------------------------------------------------------------------------------------- Côté serveur
 	server_script {
 		"server/core.lua",
-        "server/events/*.lua",
+		"server/events/**/*.lua",
 		"server/classes/*.lua",
 		"server/objects/*.lua"
 	}
@@ -21,7 +28,7 @@ version '1.0.0'
 -- ------------------------------------------------------------------------------------------- Côté client
 	client_scripts{
 		"client/core.lua",
-        "client/events/*.lua"
+		"client/events/**/*.lua",
 	}
 
 	client_exports {

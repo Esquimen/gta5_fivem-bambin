@@ -1,3 +1,10 @@
+--[[
+--@author: Mathieu MARI <contact@mathieumari.com>
+--@date:   16-04-2023 18:27:19
+--@lastModifiedBy:   Mathieu MARI <contact@mathieumari.com>
+--@lastModifiedTime: 2023-04-17 17:00:35
+--]]
+
 copCore.objects.players = {}
 
 -- ----------------------------------------------------------------------------------- Permet de récupérer les infos d'un joueur sur FiveM

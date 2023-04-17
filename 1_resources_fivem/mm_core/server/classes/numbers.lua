@@ -1,3 +1,10 @@
+--[[
+--@author: Mathieu MARI <contact@mathieumari.com>
+--@date:   17-04-2023 14:09:54
+--@lastModifiedBy:   Mathieu MARI <contact@mathieumari.com>
+--@lastModifiedTime: 2023-04-17 17:01:10
+--]]
+
 copCore.classes.numbers = {}
 
 -- ----------------------------------------------------------------------------------- Permet d'arrondir un nombre

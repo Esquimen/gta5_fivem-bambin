@@ -2,12 +2,12 @@
 --@author: Mathieu MARI <contact@mathieumari.com>
 --@date:   16-04-2023 22:48:46
 --@lastModifiedBy:   Mathieu MARI <contact@mathieumari.com>
---@lastModifiedTime: 2023-04-17 16:03:20
+--@lastModifiedTime: 2023-04-17 16:40:09
 --]]
 
 -- ----------------------------------------------------------------------------------- Contrôle du joueur au moment de sa connexion
-	RegisterNetEvent("copCore:controlExistPlayer")
-	AddEventHandler("copCore:controlExistPlayer", function()
+	RegisterNetEvent("copCore:events:yourPlayer:spawned-controlExistPlayer")
+	AddEventHandler("copCore:events:yourPlayer:spawned-controlExistPlayer", function()
 		local player = source
 		local license = copCore.objects.players.getPlayerIdentity("license", player)
 		local playerIdDB = copCore.objects.players.getPlayerIdDB(license)
