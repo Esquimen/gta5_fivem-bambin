@@ -2,8 +2,10 @@
 --@author: Mathieu MARI <contact@mathieumari.com>
 --@date:   17-04-2023 20:54:14
 --@lastModifiedBy:   Mathieu MARI <contact@mathieumari.com>
---@lastModifiedTime: 2023-04-17 22:26:33
+--@lastModifiedTime: 2023-04-17 22:49:39
 --]]
+
+-- Voir les voitures du jeu: https://wiki.rage.mp/index.php?title=Vehicles
 
 copDev.objects.cars = {}
 
