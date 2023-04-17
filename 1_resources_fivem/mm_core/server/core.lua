@@ -1,6 +1,10 @@
 -- ----------------------------------------------------------------------------------- Génération de l'objet [copCore]
 copCore = {}
+copCore.classes = {}
+copCore.events = {}
+copCore.objects = {}
 
-function getClientObject()
+
+function getServerObject()
     return copCore
 end

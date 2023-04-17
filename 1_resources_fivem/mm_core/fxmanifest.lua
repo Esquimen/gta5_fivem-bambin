@@ -8,7 +8,10 @@ version '1.0.0'
 
 -- ------------------------------------------------------------------------------------------- Côté serveur
 	server_script {
+		"server/core.lua",
         "server/events/*.lua",
+		"server/classes/*.lua",
+		"server/objects/*.lua"
 	}
 
 	server_exports {
@@ -17,6 +20,7 @@ version '1.0.0'
 
 -- ------------------------------------------------------------------------------------------- Côté client
 	client_scripts{
+		"client/core.lua",
         "client/events/*.lua"
 	}
 
