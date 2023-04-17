@@ -7,3 +7,11 @@ AddEventHandler("copCore:controlExistPlayer", function()
     print(playerIdDB.id)
 
 end)
+
+-- On déclare la fonction print_hello qui affiche un message dans la console du serveur
+function print_hello()
+    print("Hello dfhd h!")
+end
+
+-- On appelle la fonction print_hello
+print_hello()

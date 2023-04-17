@@ -17,6 +17,7 @@ version '1.0.0'
 
 -- ------------------------------------------------------------------------------------------- Côté client
 	client_scripts{
+        "client/events/*.lua"
 	}
 
 	client_exports {
