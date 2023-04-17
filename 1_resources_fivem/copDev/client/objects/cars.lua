@@ -2,13 +2,13 @@
 --@author: Mathieu MARI <contact@mathieumari.com>
 --@date:   17-04-2023 20:54:14
 --@lastModifiedBy:   Mathieu MARI <contact@mathieumari.com>
---@lastModifiedTime: 2023-04-17 21:47:01
+--@lastModifiedTime: 2023-04-17 22:26:33
 --]]
 
-copCore.objects.devmod = {}
+copDev.objects.cars = {}
 
 -- ---------------------------------------------------------------------------------------------- Fx qui permet de charger un véhicule
-function copCore.objects.devmod.loadCar()
+function copDev.objects.cars.loadCar()
 	-- ------------------------------------------------------------------------------- Récupération de la position du joueur
 		local ped = GetPlayerPed(-1)
 		local x,y,z = table.unpack(GetEntityCoords(ped))
@@ -40,10 +40,10 @@ function copCore.objects.devmod.loadCar()
 				local vehicle = CreateVehicle(vehiclehash, x, y, z, GetEntityHeading(ped)+90, 1, 0)
 
 			-- --------------------------------------------------- Supprime le véhicule précédent
-				if DoesEntityExist(copCore.objects.devmod.lastVehicle) then
-					DeleteEntity(copCore.objects.devmod.lastVehicle)
+				if DoesEntityExist(copDev.objects.cars.lastVehicle) then
+					DeleteEntity(copDev.objects.cars.lastVehicle)
 				end
-				copCore.objects.devmod.lastVehicle = vehicle
+				copDev.objects.cars.lastVehicle = vehicle
 
 			-- --------------------------------------------------- On met son joueur dans le véhicule
 				TaskWarpPedIntoVehicle(ped, vehicle, -1)
@@ -57,7 +57,7 @@ end
 
 -- ---------------------------------------------------------------------------------------------- Fx qui permet de supprimer les véhicules autour de moi
 	-- radius est exprimé en mètres
-	function copCore.objects.devmod.deleteNearbyVehicles(radius)
+	function copDev.objects.cars.deleteNearbyVehicles(radius)
 		-- --------------------------------------------------- Récupère la position du joueur
 			local playerPed = PlayerPedId()
 			local playerCoords = GetEntityCoords(playerPed)

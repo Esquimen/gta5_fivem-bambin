@@ -1,18 +1,17 @@
 --[[
 --@author: Mathieu MARI <contact@mathieumari.com>
---@date:   16-04-2023 22:50:02
+--@date:   17-04-2023 22:28:34
 --@lastModifiedBy:   Mathieu MARI <contact@mathieumari.com>
---@lastModifiedTime: 2023-04-17 22:29:00
+--@lastModifiedTime: 2023-04-17 22:30:22
 --]]
 
 -- ----------------------------------------------------------------------------------- Génération de l'objet [copCore]
-	copCore = {}
+	copDev = {}
 
-	copCore.events = {}
-	copCore.events.yourPlayer = {}
+	copDev.events = {}
 
-	copCore.objects = {}
+	copDev.objects = {}
 
 	function getClientObject()
-		return copCore
+		return copDev
 	end
