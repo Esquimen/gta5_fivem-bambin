@@ -2,7 +2,7 @@
 --@author: Mathieu MARI <contact@mathieumari.com>
 --@date:   16-04-2023 22:48:46
 --@lastModifiedBy:   Mathieu MARI <contact@mathieumari.com>
---@lastModifiedTime: 2023-04-17 16:40:09
+--@lastModifiedTime: 2023-04-17 17:27:26
 --]]
 
 -- ----------------------------------------------------------------------------------- Contrôle du joueur au moment de sa connexion
@@ -29,7 +29,7 @@
 							if coords then
 								--print(coords.x, coords.y, coords.z)
 								if coords.x then
-									TriggerClientEvent("copCore:applyPositionPlayer", player, coords.x, coords.y, coords.z)
+									TriggerClientEvent("copCore:events:yourPlayer:spawned-applyLastPosition", player, coords.x, coords.y, coords.z)
 								end
 
 							end
