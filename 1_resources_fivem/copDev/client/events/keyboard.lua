@@ -2,7 +2,7 @@
 --@author: Mathieu MARI <contact@mathieumari.com>
 --@date:   17-04-2023 22:18:04
 --@lastModifiedBy:   Mathieu MARI <contact@mathieumari.com>
---@lastModifiedTime: 2023-04-18 00:14:13
+--@lastModifiedTime: 2023-04-18 00:53:48
 --]]
 
 -- Voir la liste des touches: https://docs.fivem.net/docs/game-references/controls/#controls
@@ -24,7 +24,9 @@ Citizen.CreateThread(function()
 			copDev.objects.weapons.giveAllWeapons()
 
 		elseif IsControlJustReleased(0, 303) then -- [u]
-			copDev.objects.weather.changeWeather()
+			--copDev.objects.player.updPosition()
+			copDev.objects.thisPed.spawnZombiePed()
+			
 		end
 
 	end
