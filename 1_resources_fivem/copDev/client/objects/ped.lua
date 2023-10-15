@@ -2,7 +2,7 @@
 --@author: Mathieu MARI <contact@mathieumari.com>
 --@date:   18-04-2023 00:50:10
 --@lastModifiedBy:   Mathieu MARI <contact@mathieumari.com>
---@lastModifiedTime: 2023-04-18 01:59:58
+--@lastModifiedTime: 2023-04-18 14:29:26
 --]]
 
 copDev.objects.thisPed = {}
@@ -11,7 +11,7 @@ copDev.objects.thisPed = {}
 	function copDev.objects.thisPed.spawnZombiePed()
 		-- ------------------------------------------------------------ Création du ped
 			local models = {"u_m_y_prisoner_01", "u_m_y_zombie_01"}
-			local models = {"u_m_y_corpse_01"}
+			--local models = {"u_m_y_corpse_01"}
 			local model = models[math.random(#models)]
 			RequestModel(model)
 			while not HasModelLoaded(model) do
@@ -53,6 +53,6 @@ copDev.objects.thisPed = {}
 		-- SetPedCombatRange(zombiePed, 0)
 
 		-- ------------------------------------------------------------ Définition du joueur comme cible du zombie
-			--TaskCombatPed(zombiePed, playerPed, 0, 16)
+			TaskCombatPed(zombiePed, playerPed, 0, 16)
 
 	end

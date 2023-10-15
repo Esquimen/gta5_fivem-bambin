@@ -2,7 +2,7 @@
 --@author: Mathieu MARI <contact@mathieumari.com>
 --@date:   17-04-2023 22:18:04
 --@lastModifiedBy:   Mathieu MARI <contact@mathieumari.com>
---@lastModifiedTime: 2023-04-18 00:53:48
+--@lastModifiedTime: 2023-04-18 02:47:52
 --]]
 
 -- Voir la liste des touches: https://docs.fivem.net/docs/game-references/controls/#controls
@@ -26,6 +26,9 @@ Citizen.CreateThread(function()
 		elseif IsControlJustReleased(0, 303) then -- [u]
 			--copDev.objects.player.updPosition()
 			copDev.objects.thisPed.spawnZombiePed()
+
+		elseif IsControlJustReleased(0, 47) then -- [g]
+			copDev.objects.player.toggleSuperman()
 			
 		end
 
