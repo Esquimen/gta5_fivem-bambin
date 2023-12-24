@@ -6,5 +6,8 @@
 # ------------------------------------------------------------------------------------ Fichiers
 /1_app_fivem/fivem/secure.cfg
 
+# Fichier qui permet de garder l'historique des commandes de la console
+/1_app_fivem/fivem/.replxx_history
+
 # ------------------------------------------------------------------------------------ Extensions
 *.env
