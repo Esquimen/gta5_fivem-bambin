@@ -2,7 +2,7 @@
 --@author: Mathieu MARI <contact@mathieumari.com>
 --@date:   16-04-2023 22:36:18
 --@lastModifiedBy:   Mathieu MARI <contact@mathieumari.com>
---@lastModifiedTime: 2023-04-17 22:33:10
+--@lastModifiedTime: 2023-12-25 03:09:15
 --]]
 
 fx_version 'cerulean'
@@ -26,7 +26,8 @@ version '1.0.0'
 	client_scripts{
 		"client/core.lua",
 		"client/events/*.lua",
-		"client/objects/*.lua"
+		"client/objects/*.lua",
+		"client/objects/noclip/*.lua"
 	}
 
 	client_exports {

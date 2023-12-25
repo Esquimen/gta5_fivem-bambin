@@ -2,7 +2,7 @@
 --@author: Mathieu MARI <contact@mathieumari.com>
 --@date:   17-04-2023 20:54:14
 --@lastModifiedBy:   Mathieu MARI <contact@mathieumari.com>
---@lastModifiedTime: 2023-04-17 22:49:39
+--@lastModifiedTime: 2023-12-24 22:59:42
 --]]
 
 -- Voir les voitures du jeu: https://wiki.rage.mp/index.php?title=Vehicles
@@ -16,7 +16,7 @@ function copDev.objects.cars.loadCar()
 		local x,y,z = table.unpack(GetEntityCoords(ped))
 
 	-- ------------------------------------------------------------------------------- Choix du véhicule et conversion en hash GTA V du véhicule
-		local veh = "scorcher"
+		local veh = "thruster"
 		if veh == nil then veh = "adder" end
 		local vehiclehash = GetHashKey(veh)
 
